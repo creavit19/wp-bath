@@ -1,8 +1,9 @@
 // import external dependencies
+import 'materialize-css/dist/js/materialize';
 
-import "jquery"
+// import "jquery"
 
 // Import everything from autoload
 import "./autoload/**/*"
 
-jQuery(document).ready(() => {});
+// jQuery(document).ready(() => {});
