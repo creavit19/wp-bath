@@ -1,4 +1,6 @@
-<?php get_template_part( 'template-parts/header', 'landing' ); ?>
+<?php get_template_part( 'template-parts/header', 'landing' ); 
+      $acf_fields = get_field('pictures');
+?>
 
         <div class="col s12">
           <div class="slider1-block">
@@ -7,13 +9,11 @@
             </div>
             <div class="slider-wrapper relative">
               <div class="carousel carousel-slider" id="main-slider">
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide1.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide2.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide3.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide4.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide5.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide6.jpg"></div>
-                <div class="carousel-item"><img src="<?php echo THEME_DIR_URI.'/dist/images/'?>slider/slide7.jpg"></div>
+                <?php foreach($acf_fields as $acf_field){ ?>
+                  <div class="carousel-item"><img src="<?php echo $acf_field['picture'] ?>"></div>
+                <?php 
+                  }
+                ?>
               </div>
               <div class="control-prev"><</div>
               <div class="control-next">></div>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="col s12">
-
+              
         </div>
         <div class="col s12">
 
