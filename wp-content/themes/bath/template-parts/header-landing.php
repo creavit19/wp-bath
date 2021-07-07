@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<header>
+  <header>
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -62,43 +62,3 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6 relative">
-          <form class="main-form" action="#" method="post">
-            <div class="form-head">
-              <div class="form-header">
-                Enter for a chance to win
-              </div>
-              <div class="form-sub-header">
-                Note: You must be a homeowner in Virginia to quality.
-              </div>
-            </div>
-            <div class="form-fields">
-              <input class="browser-default" type="text" placeholder="You full name">
-              <input class="browser-default" type="text" placeholder="Enter phone nomber to reach you at">
-              <input class="browser-default" type="text" placeholder="Your email">
-              <input class="browser-default" type="text" placeholder="You address">
-              <div class="when-call">
-                <div class="right">
-                  <label>
-                    <input name="group1" type="radio" checked>
-                    <span>AM</span>
-                  </label>
-                  <label>
-                    <input name="group1" type="radio">
-                    <span>PM</span>
-                  </label>
-                </div>
-                <p>Select time to call</p>
-                <p>*Please select a time when it is convenient for you to call back</p>
-              </div>
-              <input class="browser-default" type="text" placeholder="Comments">
-              <input class="browser-default" type="submit" value="Submit">
-            </div>
-            <div class="center-align form-footer">
-              Fill out the form and submit to win 
-            </div>
-          </form>
-        </div>
