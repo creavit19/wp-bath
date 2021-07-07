@@ -1,22 +1,19 @@
 
-        <footer class="col s12">
-          <nav class="nav-footer">
-            <?php
-            if ( has_nav_menu( 'footer_menu' ) ) :
-              wp_nav_menu(
-                [
-                  'theme_location' => 'footer_menu',
-                  'menu_id'        => 'footer-menu',
-                  'walker'         => new beetroot_navwalker(),
-                ]
-              );
-            endif;
-            ?>
-          </nav>
-        </footer>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        <div class="footer-logo">
+          <img src="<?php echo THEME_DIR_URI.'/dist/images/'?>QA-Logo-Navy.png">
+        </div>
+      </div>
+      <div class="social">F</div>
+      
+    </div>
+  </div>
+</footer>
 
-      <?php wp_footer(); ?>
-    </div><!-- .row -->
-</div><!-- .container -->
+<?php wp_footer(); ?>
+    
 </body>
 </html>

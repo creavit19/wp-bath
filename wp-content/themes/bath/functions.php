@@ -10,6 +10,8 @@
  * Text domain definition
  */
 defined( 'THEME_TD' ) ? THEME_TD : define( 'THEME_TD', 'wp_dev' );
+define('THEME_DIR', get_template_directory());
+define('THEME_DIR_URI', get_template_directory_uri());
 
 // Load modules
 $theme_includes = [

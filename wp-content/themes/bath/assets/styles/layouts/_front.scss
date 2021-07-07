@@ -1,0 +1,296 @@
+.row {
+  margin-bottom: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+html {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  background-image: url("../images/confetti.png"), linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/header-bg.jpg");
+  background-repeat: repeat-x, no-repeat, repeat;
+  background-position: center top -20em, center, center;
+  background-size: cover, cover, 100%;
+  background-origin: content-box, content-box, content-box;
+}
+
+.phone {
+  font-size: 3em;
+  font-weight: bold;
+  color: #202050;
+  padding: 0.5em 0;
+}
+
+.logo-block {
+  font-size: 10.8vw;
+  margin-bottom: 0.4em;
+}
+
+.logo-block img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: -0.5em;
+}
+
+.slogan1 {
+  color: #202050;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.amount {
+  color: #248abd;
+  font-size: 2.05em;
+  font-weight: bold;
+  line-height: 0.9em;
+}
+
+.slogan2 {
+  color: #202050;
+  font-size: 0.58em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-form {
+  font-size: 2.8vw;
+  background-color: #f8f8f7;
+  color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-form .form-head {
+  background-color: #248abd;
+  color: #fff;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.main-form .form-head .form-header {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.main-form .form-head .form-sub-header {
+  font-size: 1.05em;
+}
+
+.main-form .form-fields {
+  padding: 1em 1em 0 1em;
+}
+
+.main-form .form-fields input {
+  display: block;
+  padding: 0.6em;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  box-shadow: none;
+  width: 100%;
+}
+
+.main-form .form-fields input:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.main-form .form-fields input[type="submit"] {
+  background-color: #da8344;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 0 #9f5224;
+}
+
+.main-form .form-fields input::placeholder {
+  color: #000;
+}
+
+.main-form label:first-child {
+  margin-right: 1em;
+}
+
+.main-form .form-fields .when-call label {
+  font-size: 1em;
+}
+
+.counter-block .counter-labels span {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.main-form .form-fields .when-call label span {
+  font-size: 1em;
+  color: #000;
+}
+
+.main-form .form-footer {
+  padding: 1em;
+}
+
+.counter-line {
+  background-color: #202050;
+  color: #fff;
+}
+
+main {
+  background-color: #248abd;
+  color: #fff;
+}
+
+.counter-block {
+  font-size: 1rem;
+  margin: 1em;
+}
+
+.counter-block .counter-docket {
+  font-size: 1.4em;
+}
+
+.counter-block .counter {
+  font-size: 3em;
+  line-height: 1em;
+  margin-left: -1em;
+}
+
+.counter-block .counter-labels {
+  font-size: 1em;
+}
+
+.slider1-block {
+  padding: 2em;
+}
+
+.slider1-block .slider1-docket {
+  font-size: 2em;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+.slider1-block .control-prev {
+  font-size: 5rem;
+  position: absolute;
+  line-height: 1.08em;
+  padding-left: 0.17em;
+  top: calc(50% - 0.5em);
+  left: -0.5em;
+  color: #da8344;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  z-index: 9999;
+}
+
+.slider1-block .control-next {
+  font-size: 5rem;
+  position: absolute;
+  line-height: 1.08em;
+  padding-left: 0.24em;
+  top: calc(50% - 0.5em);
+  right: -0.5em;
+  color: #da8344;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  z-index: 9999;
+}
+
+.control-next:hover {
+  cursor: pointer;
+}
+
+.control-prev:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #202050;
+}
+
+.footer-logo img {
+  width: 100%;
+  filter: contrast(200%) invert(100%);
+}
+
+/*  ==========  Mobile First Method  ==========  */
+
+/* --s-- Small */
+
+/* --m-- Medium Devices, Desktops  */
+@media only screen and (min-width: 600px) {
+  .logo-block {
+    font-size: 5.2vw;
+  }
+
+  .logo-block img {
+    width: 70%;
+  }
+
+  .main-form {
+    position: absolute;
+    width: 100%;
+    top: -45vw;
+    right: -100%;
+    font-size: 1.4vw;
+  }
+
+  header {
+    background-position: center top 180%, center, center;
+  }
+
+  .counter-block {
+    font-size: 0.7rem;
+  }
+
+  .slider1-block {
+    margin-top: 5em;
+  }
+}
+
+/* --l-- Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) {
+  .logo-block {
+    font-size: 4.2vw;
+  }
+
+  .logo-block img {
+    width: 50%;
+  }
+
+  .main-form {
+    top: -36vw;
+    font-size: 1.1vw;
+  }
+
+  header {
+    background-position: center top 150%, center, center;
+  }
+
+  .counter-block {
+    font-size: 1rem;
+  }
+}
+
+/* --xl-- Extra Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .logo-block {
+    font-size: 4.2vw;
+  }
+
+  .main-form {
+    top: -35vw;
+    font-size: 1.1vw;
+  }
+
+  header {
+    background-position: center top 140%, center, center;
+  }
+}
