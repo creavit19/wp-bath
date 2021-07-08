@@ -106,6 +106,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   box-shadow: 0 3px 0 #9f5224;
+  cursor: pointer;
 }
 
 .main-form .form-fields input::placeholder {
@@ -167,10 +168,24 @@ main {
   padding: 2em;
 }
 
+.slider2-block {
+  padding: 2em;
+}
+
+.slider2-block .slider-wrapper {
+  padding: 0 2em;
+}
+
 .slider1-block .slider1-docket {
   font-size: 2em;
-  margin-top: 4em;
+  margin-top: 5em;
   margin-bottom: 1em;
+}
+
+.slider2-block .slider2-docket {
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: -1em;
 }
 
 .slider1-block .control-prev {
@@ -203,12 +218,46 @@ main {
   z-index: 9999;
 }
 
+.slider2-block .control-prev {
+  font-size: 5rem;
+  position: absolute;
+  line-height: 1.08em;
+  padding-left: 0.17em;
+  top: calc(50% - 0.5em);
+  left: -0.5em;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  z-index: 9999;
+}
+
+.slider2-block .control-next {
+  font-size: 5rem;
+  position: absolute;
+  line-height: 1.08em;
+  padding-left: 0.24em;
+  top: calc(50% - 0.5em);
+  right: -0.5em;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  z-index: 9999;
+}
+
 .control-next:hover {
   cursor: pointer;
 }
 
 .control-prev:hover {
   cursor: pointer;
+}
+
+#review-slider {
+  height: 10em;
 }
 
 footer {
@@ -220,9 +269,19 @@ footer {
   filter: contrast(200%) invert(100%);
 }
 
-/*  ==========  Mobile First Method  ==========  */
+.bright-star {
+  color: #e5dd1c;
+}
 
-/* --s-- Small */
+.dim-star {
+  color: #858585;
+}
+
+#review-slider .fa-star {
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 0 0.2em;
+}
 
 /* --m-- Medium Devices, Desktops  */
 @media only screen and (min-width: 600px) {
@@ -253,6 +312,22 @@ footer {
   .slider1-block {
     margin-top: 15em;
   }
+
+  .slider2-block .slider-wrapper {
+    padding: 0 6em;
+  }
+
+  .slider2-block .control-next {
+    right: -0.1em;
+  }
+
+  .slider2-block .control-prev {
+    left: -0.1em;
+  }
+
+  .slider2-block .slider2-docket {
+    margin-bottom: -3em;
+  }
 }
 
 /* --l-- Large Devices, Wide Screens */
@@ -277,20 +352,50 @@ footer {
   .counter-block {
     font-size: 1rem;
   }
+
+  .slider2-block .slider-wrapper {
+    padding: 0 10em;
+  }
+
+  .slider2-block .control-next {
+    right: 0.5em;
+  }
+
+  .slider2-block .control-prev {
+    left: 0.5em;
+  }
 }
 
 /* --xl-- Extra Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   .logo-block {
-    font-size: 4.2vw;
+    font-size: 4.5rem;
   }
 
   .main-form {
-    top: -35vw;
-    font-size: 1.1vw;
+    top: -31.5em;
+    font-size: 1.2rem;
   }
 
   header {
     background-position: center top 140%, center, center;
+  }
+
+  .slider2-block .slider-wrapper {
+    padding: 0 16em;
+  }
+
+  .slider2-block .control-next {
+    right: 1.5em;
+  }
+
+  .slider2-block .control-prev {
+    left: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  header {
+    background-position: center top 100%, center, center;
   }
 }

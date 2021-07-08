@@ -1,5 +1,6 @@
 <?php get_template_part( 'template-parts/header', 'landing' ); 
-      $acf_fields = get_field('pictures');
+      $acf_slider_pictures = get_field('pictures');
+      $acf_reviews = get_field('review_items');
 ?>
   <main>
     <div class="container">
@@ -26,12 +27,12 @@
         <div class="col s12">
           <div class="slider1-block">
             <div class="center-align slider1-docket">
-              Here's what you could win:
+              <?php echo get_field('slider_header'); ?>
             </div>
             <div class="slider-wrapper relative">
               <div class="carousel carousel-slider" id="main-slider">
-                <?php foreach($acf_fields as $acf_field){ ?>
-                  <div class="carousel-item"><img src="<?php echo $acf_field['picture'] ?>"></div>
+                <?php foreach($acf_slider_pictures as $item){ ?>
+                  <div class="carousel-item"><img src="<?php echo $item['picture'] ?>"></div>
                 <?php 
                   }
                 ?>
@@ -42,10 +43,40 @@
           </div>
         </div>
         <div class="col s12">
-              
+          <div class="slider2-block">
+            <div class="center-align slider2-docket">
+              <?php echo get_field('review_header'); ?>
+            </div>
+            <div class="slider-wrapper relative">
+              <div class="carousel carousel-slider" id="review-slider">
+                <?php foreach($acf_reviews as $item){ ?>
+                  <div class="carousel-item">
+                    <div class="valign-wrapper" style="height: 100%;">
+                      <div>
+                        <h2 class="center-align">
+                          <?php
+                          for($i = 1; $i <= 5; $i++){
+                            $star_class = $i <= $item['stars'] ? 'bright-star' : 'dim-star';
+                            echo '<i class="fa fa-star '.$star_class.'" aria-hidden="true"></i>';
+                          }
+                          ?>
+                        </h2>
+                        <p><?php echo '"'.$item['review_text'].'"' ?></p>
+                        <p class="right-align">– <?php echo $item['author_name'] ?></p>
+                      </div>
+                    </div>
+                  </div>
+                <?php 
+                  }
+                ?>
+              </div>
+              <div class="control-prev"><</div>
+              <div class="control-next">></div>
+            </div>
+          </div>   
         </div>
         <div class="col s12">
-
+          
         </div>
       </div>
     </div>

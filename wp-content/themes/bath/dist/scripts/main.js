@@ -91,7 +91,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // jQuery(document).ready(() => {});
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Слайдер
+  // Слайдер1
   var mainSlider = document.getElementById('main-slider');
   var instanceMainSlider = window.M.Carousel.init(mainSlider, {
     fullWidth: true
@@ -108,6 +108,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelector('.slider1-block .control-next').onclick = function () {
     instanceMainSlider.next();
+  }; // Слайдер2
+
+
+  var reviewSlider = document.getElementById('review-slider');
+  var instanceReviewSlider = window.M.Carousel.init(reviewSlider, {
+    fullWidth: true,
+    height: 200
+  });
+  setInterval(function () {
+    if (instanceReviewSlider) {
+      instanceReviewSlider.next();
+    }
+  }, 7000);
+
+  document.querySelector('.slider2-block .control-prev').onclick = function () {
+    instanceReviewSlider.prev();
+  };
+
+  document.querySelector('.slider2-block .control-next').onclick = function () {
+    instanceReviewSlider.next();
   };
 });
 
