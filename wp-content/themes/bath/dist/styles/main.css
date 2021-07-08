@@ -17005,6 +17005,58 @@ input[type=range]::-ms-thumb {
   clip: auto;
 }
 
+/* line 1, assets/styles/layouts/_footer.scss */
+
+footer {
+  background-color: #202050;
+}
+
+/* line 4, assets/styles/layouts/_footer.scss */
+
+footer .valign-wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 9, assets/styles/layouts/_footer.scss */
+
+.footer-logo {
+  width: 15em;
+  margin: 1em 0;
+}
+
+/* line 13, assets/styles/layouts/_footer.scss */
+
+.footer-logo img {
+  width: 100%;
+  -webkit-filter: contrast(200%) invert(100%);
+          filter: contrast(200%) invert(100%);
+}
+
+/* line 19, assets/styles/layouts/_footer.scss */
+
+.social-icons a {
+  display: inline-block;
+  font-size: 2rem;
+  color: #202050;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-left: 1em;
+  padding-left: 0.33em;
+  padding-top: 0.09em;
+}
+
+/* line 31, assets/styles/layouts/_footer.scss */
+
+.social-icons a:hover {
+  background-color: #202050;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 /* line 1, assets/styles/layouts/_front.scss */
 
 .row {
@@ -17368,31 +17420,17 @@ main {
 
 /* line 263, assets/styles/layouts/_front.scss */
 
-footer {
-  background-color: #202050;
-}
-
-/* line 267, assets/styles/layouts/_front.scss */
-
-.footer-logo img {
-  width: 100%;
-  -webkit-filter: contrast(200%) invert(100%);
-          filter: contrast(200%) invert(100%);
-}
-
-/* line 272, assets/styles/layouts/_front.scss */
-
 .bright-star {
   color: #e5dd1c;
 }
 
-/* line 276, assets/styles/layouts/_front.scss */
+/* line 267, assets/styles/layouts/_front.scss */
 
 .dim-star {
   color: #858585;
 }
 
-/* line 280, assets/styles/layouts/_front.scss */
+/* line 271, assets/styles/layouts/_front.scss */
 
 #review-slider .fa-star {
   display: inline-block;
@@ -17400,13 +17438,13 @@ footer {
   padding: 0 0.2em;
 }
 
-/* line 286, assets/styles/layouts/_front.scss */
+/* line 277, assets/styles/layouts/_front.scss */
 
 .front-link-block {
   font-size: 1.25rem;
 }
 
-/* line 290, assets/styles/layouts/_front.scss */
+/* line 281, assets/styles/layouts/_front.scss */
 
 a.front-link {
   display: inline-block;
@@ -17419,7 +17457,7 @@ a.front-link {
   margin-bottom: 6em;
 }
 
-/* line 301, assets/styles/layouts/_front.scss */
+/* line 292, assets/styles/layouts/_front.scss */
 
 a.front-link:hover {
   color: #e5dd1c;
@@ -17429,19 +17467,19 @@ a.front-link:hover {
 /* --m-- Medium Devices, Desktops  */
 
 @media only screen and (min-width: 600px) {
-  /* line 308, assets/styles/layouts/_front.scss */
+  /* line 299, assets/styles/layouts/_front.scss */
 
   .logo-block {
     font-size: 5.2vw;
   }
 
-  /* line 312, assets/styles/layouts/_front.scss */
+  /* line 303, assets/styles/layouts/_front.scss */
 
   .logo-block img {
     width: 70%;
   }
 
-  /* line 316, assets/styles/layouts/_front.scss */
+  /* line 307, assets/styles/layouts/_front.scss */
 
   .main-form {
     position: absolute;
@@ -17451,43 +17489,43 @@ a.front-link:hover {
     font-size: 1.4vw;
   }
 
-  /* line 324, assets/styles/layouts/_front.scss */
+  /* line 315, assets/styles/layouts/_front.scss */
 
   header {
     background-position: center top 180%, center, center;
   }
 
-  /* line 328, assets/styles/layouts/_front.scss */
+  /* line 319, assets/styles/layouts/_front.scss */
 
   .counter-block {
     font-size: 0.7rem;
   }
 
-  /* line 332, assets/styles/layouts/_front.scss */
+  /* line 323, assets/styles/layouts/_front.scss */
 
   .slider1-block {
     margin-top: 15em;
   }
 
-  /* line 336, assets/styles/layouts/_front.scss */
+  /* line 327, assets/styles/layouts/_front.scss */
 
   .slider2-block .slider-wrapper {
     padding: 0 6em;
   }
 
-  /* line 340, assets/styles/layouts/_front.scss */
+  /* line 331, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-next {
     right: -0.1em;
   }
 
-  /* line 344, assets/styles/layouts/_front.scss */
+  /* line 335, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-prev {
     left: -0.1em;
   }
 
-  /* line 348, assets/styles/layouts/_front.scss */
+  /* line 339, assets/styles/layouts/_front.scss */
 
   .slider2-block .slider2-docket {
     margin-bottom: -3em;
@@ -17497,50 +17535,50 @@ a.front-link:hover {
 /* --l-- Large Devices, Wide Screens */
 
 @media only screen and (min-width: 992px) {
-  /* line 355, assets/styles/layouts/_front.scss */
+  /* line 346, assets/styles/layouts/_front.scss */
 
   .logo-block {
     font-size: 4.2vw;
   }
 
-  /* line 359, assets/styles/layouts/_front.scss */
+  /* line 350, assets/styles/layouts/_front.scss */
 
   .logo-block img {
     width: 50%;
   }
 
-  /* line 363, assets/styles/layouts/_front.scss */
+  /* line 354, assets/styles/layouts/_front.scss */
 
   .main-form {
     top: -36vw;
     font-size: 1.1vw;
   }
 
-  /* line 368, assets/styles/layouts/_front.scss */
+  /* line 359, assets/styles/layouts/_front.scss */
 
   header {
     background-position: center top 150%, center, center;
   }
 
-  /* line 372, assets/styles/layouts/_front.scss */
+  /* line 363, assets/styles/layouts/_front.scss */
 
   .counter-block {
     font-size: 1rem;
   }
 
-  /* line 376, assets/styles/layouts/_front.scss */
+  /* line 367, assets/styles/layouts/_front.scss */
 
   .slider2-block .slider-wrapper {
     padding: 0 10em;
   }
 
-  /* line 380, assets/styles/layouts/_front.scss */
+  /* line 371, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-next {
     right: 0.5em;
   }
 
-  /* line 384, assets/styles/layouts/_front.scss */
+  /* line 375, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-prev {
     left: 0.5em;
@@ -17550,38 +17588,38 @@ a.front-link:hover {
 /* --xl-- Extra Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1200px) {
-  /* line 391, assets/styles/layouts/_front.scss */
+  /* line 382, assets/styles/layouts/_front.scss */
 
   .logo-block {
     font-size: 4.5rem;
   }
 
-  /* line 395, assets/styles/layouts/_front.scss */
+  /* line 386, assets/styles/layouts/_front.scss */
 
   .main-form {
     top: -31.5em;
     font-size: 1.2rem;
   }
 
-  /* line 400, assets/styles/layouts/_front.scss */
+  /* line 391, assets/styles/layouts/_front.scss */
 
   header {
     background-position: center top 140%, center, center;
   }
 
-  /* line 404, assets/styles/layouts/_front.scss */
+  /* line 395, assets/styles/layouts/_front.scss */
 
   .slider2-block .slider-wrapper {
     padding: 0 16em;
   }
 
-  /* line 408, assets/styles/layouts/_front.scss */
+  /* line 399, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-next {
     right: 1.5em;
   }
 
-  /* line 412, assets/styles/layouts/_front.scss */
+  /* line 403, assets/styles/layouts/_front.scss */
 
   .slider2-block .control-prev {
     left: 1.5em;
@@ -17589,7 +17627,7 @@ a.front-link:hover {
 }
 
 @media only screen and (min-width: 1900px) {
-  /* line 418, assets/styles/layouts/_front.scss */
+  /* line 409, assets/styles/layouts/_front.scss */
 
   header {
     background-position: center top 100%, center, center;
