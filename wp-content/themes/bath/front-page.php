@@ -1,6 +1,7 @@
 <?php get_template_part( 'template-parts/header', 'landing' ); 
       $acf_slider_pictures = get_field('pictures');
       $acf_reviews = get_field('review_items');
+      $acf_link = get_field('link');
 ?>
   <main>
     <div class="container">
@@ -75,8 +76,13 @@
             </div>
           </div>   
         </div>
-        <div class="col s12">
-          
+        <div class="col s12 front-link-block">
+          <div class="center-align">
+            <?php the_field('inscription'); ?>
+          </div>
+          <div class="center-align">
+            <?php echo '<a href="'.$acf_link['url'].'" target="'.$acf_link['target'].'" class="front-link">'.$acf_link['title'].'</a>'; ?>
+          </div>
         </div>
       </div>
     </div>
