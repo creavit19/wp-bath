@@ -43,11 +43,11 @@
                 <div class="counter-docket">
                   Next drawing:
                 </div>
-                <div class="counter">
-                  <span>313</span> :
-                  <span>20</span> :
-                  <span>29</span> :
-                  <span>18</span>
+                <div class="counter" id="counter" data-dateto="<?php the_field('moment_to_drawing'); ?>">
+                  <span data-role="days">0</span> :
+                  <span data-role="hours">00</span> :
+                  <span data-role="minutes">00</span> :
+                  <span data-role="seconds">00</span>
                 </div>
                 <div class="counter-labels">
                   <span>Days</span>

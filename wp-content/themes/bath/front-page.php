@@ -7,7 +7,6 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m6 relative">
-
           <div class="main-form">
             <div class="form-head">
               <div class="form-header">
@@ -22,8 +21,6 @@
               Fill out the form and submit to win 
             </div>
           </div>
-
-          
         </div>
         <div class="col s12">
           <div class="slider1-block">
@@ -87,6 +84,5 @@
       </div>
     </div>
   </main>
-
 <?php
 get_footer();
