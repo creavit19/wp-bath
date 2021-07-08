@@ -58,6 +58,55 @@ header {
   text-transform: uppercase;
 }
 
+.counter-line {
+  background-color: #202050;
+  color: #fff;
+}
+
+.counter-block {
+  font-size: 1rem;
+  margin: 1em;
+}
+
+.counter-block .counter-docket {
+  font-size: 1.6em;
+}
+
+.counter-block .counter {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+[data-role="seconds"]::after {
+  content: 'Seconds';
+}
+
+[data-role="minutes"]::after {
+  content: 'Minutes';
+}
+
+[data-role="hours"]::after {
+  content: 'Hours';
+}
+
+[data-role="days"]::after {
+  content: 'Days';
+}
+
+.counter-line .counter-block .counter > div {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    font-size: 0.35em;
+    top: 2.5em;
+    right: 0;
+  }
+}
+
 .main-form {
   font-size: 2.8vw;
   background-color: #f8f8f7;
@@ -121,11 +170,6 @@ header {
   font-size: 1em;
 }
 
-.counter-block .counter-labels span {
-  display: inline-block;
-  margin: 0 1em;
-}
-
 .main-form .form-fields .when-call label span {
   font-size: 1em;
   color: #000;
@@ -135,33 +179,9 @@ header {
   padding: 1em;
 }
 
-.counter-line {
-  background-color: #202050;
-  color: #fff;
-}
-
 main {
   background-color: #248abd;
   color: #fff;
-}
-
-.counter-block {
-  font-size: 1rem;
-  margin: 1em;
-}
-
-.counter-block .counter-docket {
-  font-size: 1.4em;
-}
-
-.counter-block .counter {
-  font-size: 3em;
-  line-height: 1em;
-  margin-left: -1em;
-}
-
-.counter-block .counter-labels {
-  font-size: 1em;
 }
 
 .slider1-block {
@@ -380,7 +400,7 @@ a.front-link:hover {
 /* --xl-- Extra Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   .logo-block {
-    font-size: 4.5rem;
+    font-size: 4.4rem;
   }
 
   .main-form {

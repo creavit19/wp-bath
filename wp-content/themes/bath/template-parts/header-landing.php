@@ -44,16 +44,10 @@
                   Next drawing:
                 </div>
                 <div class="counter" id="counter" data-dateto="<?php the_field('moment_to_drawing'); ?>">
-                  <span data-role="days">0</span> :
-                  <span data-role="hours">00</span> :
-                  <span data-role="minutes">00</span> :
-                  <span data-role="seconds">00</span>
-                </div>
-                <div class="counter-labels">
-                  <span>Days</span>
-                  <span>Hours</span>
-                  <span>Minutes</span>
-                  <span>Seconds</span>
+                  <div data-role="days">0</div> :
+                  <div data-role="hours">00</div> :
+                  <div data-role="minutes">00</div> :
+                  <div data-role="seconds">00</div>
                 </div>
               </div>
             </div>
